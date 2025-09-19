@@ -4,16 +4,16 @@
   .NET development and enhancing my web development skills.
 
 - 🤝 **Open to collaborate on:**  
-  Open-source projects related to web development and Java-based applications.
+  Open-source projects related to web development.
 
 - ❓ **Seeking help with:**  
-  System design, performance optimization, .NET development, Angular, and advanced Java concepts.
+  System design, performance optimization, .NET development, Angular.
 
 - 📚 **Currently learning:**  
   Angular, .NET Core MVC, and backend optimizations with SQL Server.
 
 - 💬 **Ask me about:**  
-  Web development, Java, MERN stack projects, and C#.
+  Web development, MERN stack projects, Angular and C#.
 
 - 🎲 **Fun fact:**  
   I once built a C# BINGO game that lets you play against the computer!
