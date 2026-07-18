@@ -939,7 +939,6 @@ repeatCount="indefinite"/>
     width="430"
     height="645"
     preserveAspectRatio="xMidYMid meet"
-    clip-path="url(#avatarClip)"
     opacity="0">
 
     <animate
