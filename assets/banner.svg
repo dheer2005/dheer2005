@@ -351,10 +351,12 @@ L0 740Z
 
 <clipPath id="avatarClip">
 
-<circle
-cx="1005"
-cy="315"
-r="170"/>
+<rect
+x="790"
+y="70"
+width="430"
+height="560"
+rx="28"/>
 
 </clipPath>
 
@@ -381,13 +383,15 @@ result="blur"/>
 
 <rect
 
-x="810"
+x="790"
 
-y="120"
+y="70"
 
-width="390"
+width="430"
 
-height="6"
+height="8"
+
+rx="4"
 
 fill="#67e8ff"
 
@@ -911,69 +915,46 @@ KEEP GROWING
 
 <g id="avatar">
 
-<circle
+<!-- Avatar Frame -->
 
-cx="1005"
-
-cy="315"
-
-r="182"
-
+<rect
+x="790"
+y="70"
+width="430"
+height="560"
+rx="28"
 fill="none"
-
-stroke="#a66dff"
-
+stroke="#8b6cff"
 stroke-width="2"
+opacity=".45"/>
 
-opacity=".45">
-
-<animateTransform
-attributeName="transform"
-type="rotate"
-from="0 1005 315"
-to="360 1005 315"
-dur="40s"
-repeatCount="indefinite"/>
-
-</circle>
-
-<circle
-
-cx="1005"
-
-cy="315"
-
-r="174"
-
+<rect
+x="798"
+y="78"
+width="414"
+height="544"
+rx="24"
 fill="none"
-
-stroke="#53d8ff"
-
+stroke="#59ddff"
 stroke-width="1"
+opacity=".35">
 
-stroke-dasharray="6 8"
-
-opacity=".55">
-
-<animateTransform
-attributeName="transform"
-type="rotate"
-from="360 1005 315"
-to="0 1005 315"
-dur="24s"
+<animate
+attributeName="opacity"
+values=".15;.45;.15"
+dur="4s"
 repeatCount="indefinite"/>
 
-</circle>
-
+</rect>
+    
 <image
     href="https://raw.githubusercontent.com/dheer2005/dheer2005/main/assets/avatar.png"
-    x="835"
-    y="95"
-    width="340"
-    height="470"
+    x="730"
+    y="20"
+    width="610"
+    height="720"
     clip-path="url(#avatarClip)"
-    preserveAspectRatio="xMidYMid meet"
-    opacity="0">
+    preserveAspectRatio="xMidYMid slice">
 
     <animate
         attributeName="opacity"
