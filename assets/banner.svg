@@ -970,7 +970,7 @@ repeatCount="indefinite"/>
     y="95"
     width="340"
     height="470"
-    href="./avatar.png"
+    href="avatar.png"
     clip-path="url(#avatarClip)"
     preserveAspectRatio="xMidYMid meet"/>
 
