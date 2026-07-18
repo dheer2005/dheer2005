@@ -155,6 +155,42 @@ filter:url(#glow);
 </style>
 
 <defs>
+    <!-- Placeholder for future avatar -->
+<!-- ========================= -->
+<!-- AVATAR MASK -->
+<!-- ========================= -->
+    
+<clipPath id="avatarClip"><rect x="790" y="70" width="430" height="560" rx="28"/> </clipPath>
+<filter id="avatarGlow">
+
+<feGaussianBlur
+stdDeviation="10"
+result="blur"/>
+
+<feMerge>
+
+<feMergeNode in="blur"/>
+
+<feMergeNode in="SourceGraphic"/>
+
+</feMerge>
+
+</filter>
+
+<linearGradient id="terminalBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#ff63d9"/>
+<stop offset="100%" stop-color="#7d6dff"/>
+</linearGradient>
+
+<linearGradient id="glass">
+<stop offset="0%" stop-color="#ffffff" stop-opacity=".08"/>
+<stop offset="100%" stop-color="#ffffff" stop-opacity=".02"/>
+</linearGradient>
+
+<linearGradient id="editorGlass">
+<stop offset="0%" stop-color="#0b1024"/>
+<stop offset="100%" stop-color="#11172d"/>
+</linearGradient>
 
 <clipPath id="clip">
 
@@ -342,39 +378,8 @@ L0 740Z
 
 <rect x="790" y="60" rx="30" ry="30" width="430" height="600" fill="#101425" fill-opacity=".38" stroke="#7a5eff" stroke-opacity=".20"></rect>
 
-<!-- Placeholder for future avatar -->
-<!-- ========================= -->
-<!-- AVATAR MASK -->
-<!-- ========================= -->
 
-<defs>
 
-<clipPath id="avatarClip">
-    <rect
-        x="790"
-        y="70"
-        width="430"
-        height="560"
-        rx="28"/>
-</clipPath>
-
-<filter id="avatarGlow">
-
-<feGaussianBlur
-stdDeviation="10"
-result="blur"/>
-
-<feMerge>
-
-<feMergeNode in="blur"/>
-
-<feMergeNode in="SourceGraphic"/>
-
-</feMerge>
-
-</filter>
-
-</defs>
 
 <!-- Future scanner path -->
 <!-- Avatar Scanner -->
@@ -411,28 +416,10 @@ repeatCount="indefinite"/>
 
 </rect>
 
-    <!-- ========================= -->
+<!-- ========================= -->
 <!-- TERMINAL WINDOW -->
 <!-- ========================= -->
 
-<defs>
-
-<linearGradient id="terminalBorder" x1="0%" y1="0%" x2="100%" y2="100%">
-<stop offset="0%" stop-color="#ff63d9"/>
-<stop offset="100%" stop-color="#7d6dff"/>
-</linearGradient>
-
-<linearGradient id="glass">
-<stop offset="0%" stop-color="#ffffff" stop-opacity=".08"/>
-<stop offset="100%" stop-color="#ffffff" stop-opacity=".02"/>
-</linearGradient>
-
-<linearGradient id="editorGlass">
-<stop offset="0%" stop-color="#0b1024"/>
-<stop offset="100%" stop-color="#11172d"/>
-</linearGradient>
-
-</defs>
 
 <!-- TERMINAL -->
 
