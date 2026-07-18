@@ -966,26 +966,27 @@ repeatCount="indefinite"/>
 </circle>
 
 <image
+    href="avatar.png"
     x="835"
     y="95"
     width="340"
     height="470"
-    href="assets/avatar.png"
     clip-path="url(#avatarClip)"
-    preserveAspectRatio="xMidYMid meet"/>
+    preserveAspectRatio="xMidYMid meet"
+    opacity="0">
 
-<animate
-attributeName="opacity"
-values="0;1"
-dur="2.8s"
-fill="freeze"/>
+    <animate
+        attributeName="opacity"
+        values="0;1"
+        dur="2.8s"
+        fill="freeze"/>
 
-<animateTransform
-attributeName="transform"
-type="translate"
-values="0 10;0 -8;0 10"
-dur="6s"
-repeatCount="indefinite"/>
+    <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0 10;0 -8;0 10"
+        dur="6s"
+        repeatCount="indefinite"/>
 
 </image>
 
