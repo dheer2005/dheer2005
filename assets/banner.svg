@@ -377,11 +377,35 @@ result="blur"/>
 </defs>
 
 <!-- Future scanner path -->
-<rect id="scanner" x="790" y="140" width="430" height="8" fill="#6fe8ff" opacity="0">
+<!-- Avatar Scanner -->
 
-<animate attributeName="y" values="140;500;140" dur="3.5s" repeatCount="indefinite"></animate>
+<rect
 
-<animate attributeName="opacity" values="0;.9;0" dur="3.5s" repeatCount="indefinite"></animate>
+x="810"
+
+y="120"
+
+width="390"
+
+height="6"
+
+fill="#67e8ff"
+
+opacity="0"
+
+filter="url(#glow)">
+
+<animate
+attributeName="y"
+values="120;520;120"
+dur="3.5s"
+repeatCount="indefinite"/>
+
+<animate
+attributeName="opacity"
+values="0;1;0"
+dur="3.5s"
+repeatCount="indefinite"/>
 
 </rect>
 
@@ -881,6 +905,298 @@ KEEP GROWING
 
 </text>
 
+    <!-- ================================= -->
+<!-- AVATAR -->
+<!-- ================================= -->
+
+<g id="avatar">
+
+<circle
+
+cx="1005"
+
+cy="315"
+
+r="182"
+
+fill="none"
+
+stroke="#a66dff"
+
+stroke-width="2"
+
+opacity=".45">
+
+<animateTransform
+attributeName="transform"
+type="rotate"
+from="0 1005 315"
+to="360 1005 315"
+dur="40s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<circle
+
+cx="1005"
+
+cy="315"
+
+r="174"
+
+fill="none"
+
+stroke="#53d8ff"
+
+stroke-width="1"
+
+stroke-dasharray="6 8"
+
+opacity=".55">
+
+<animateTransform
+attributeName="transform"
+type="rotate"
+from="360 1005 315"
+to="0 1005 315"
+dur="24s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<image
+
+href="avatar.svg"
+
+x="835"
+
+y="95"
+
+width="340"
+
+height="470"
+
+clip-path="url(#avatarClip)"
+
+opacity="0"
+
+filter="url(#avatarGlow)">
+
+<animate
+attributeName="opacity"
+values="0;1"
+dur="2.8s"
+fill="freeze"/>
+
+<animateTransform
+attributeName="transform"
+type="translate"
+values="0 10;0 -8;0 10"
+dur="6s"
+repeatCount="indefinite"/>
+
+</image>
+
+</g>
+
+<!-- ================================= -->
+<!-- HOLOGRAM -->
+<!-- ================================= -->
+
+<g>
+
+<rect
+
+x="835"
+
+y="90"
+
+width="340"
+
+height="470"
+
+clip-path="url(#avatarClip)"
+
+fill="url(#blueOrb)"
+
+opacity="0">
+
+<animate
+attributeName="opacity"
+values=".8;0"
+dur="2.2s"
+fill="freeze"/>
+
+</rect>
+
+<g opacity=".18">
+
+<line x1="840" y1="110" x2="1170" y2="110" stroke="#6ce6ff"/>
+
+<line x1="840" y1="130" x2="1170" y2="130" stroke="#6ce6ff"/>
+
+<line x1="840" y1="150" x2="1170" y2="150" stroke="#6ce6ff"/>
+
+<line x1="840" y1="170" x2="1170" y2="170" stroke="#6ce6ff"/>
+
+<line x1="840" y1="190" x2="1170" y2="190" stroke="#6ce6ff"/>
+
+<line x1="840" y1="210" x2="1170" y2="210" stroke="#6ce6ff"/>
+
+<line x1="840" y1="230" x2="1170" y2="230" stroke="#6ce6ff"/>
+
+<line x1="840" y1="250" x2="1170" y2="250" stroke="#6ce6ff"/>
+
+<line x1="840" y1="270" x2="1170" y2="270" stroke="#6ce6ff"/>
+
+<line x1="840" y1="290" x2="1170" y2="290" stroke="#6ce6ff"/>
+
+<line x1="840" y1="310" x2="1170" y2="310" stroke="#6ce6ff"/>
+
+<line x1="840" y1="330" x2="1170" y2="330" stroke="#6ce6ff"/>
+
+<line x1="840" y1="350" x2="1170" y2="350" stroke="#6ce6ff"/>
+
+<line x1="840" y1="370" x2="1170" y2="370" stroke="#6ce6ff"/>
+
+<line x1="840" y1="390" x2="1170" y2="390" stroke="#6ce6ff"/>
+
+<line x1="840" y1="410" x2="1170" y2="410" stroke="#6ce6ff"/>
+
+<line x1="840" y1="430" x2="1170" y2="430" stroke="#6ce6ff"/>
+
+<line x1="840" y1="450" x2="1170" y2="450" stroke="#6ce6ff"/>
+
+<line x1="840" y1="470" x2="1170" y2="470" stroke="#6ce6ff"/>
+
+</g>
+
+</g>
+
+<!-- ================================= -->
+<!-- ORBIT ICONS -->
+<!-- ================================= -->
+
+<g>
+
+<circle cx="1005" cy="115" r="12" fill="#ff61d8"/>
+<text x="998" y="120" font-size="10" fill="#fff">C#</text>
+
+<animateTransform
+attributeName="transform"
+type="rotate"
+from="0 1005 315"
+to="360 1005 315"
+dur="22s"
+repeatCount="indefinite"/>
+
+</g>
+
+<g>
+
+<circle cx="1190" cy="315" r="13" fill="#57d7ff"/>
+<text x="1178" y="320" font-size="10" fill="#fff">SQL</text>
+
+<animateTransform
+attributeName="transform"
+type="rotate"
+from="0 1005 315"
+to="360 1005 315"
+dur="22s"
+repeatCount="indefinite"/>
+
+</g>
+
+<g>
+
+<circle cx="1005" cy="510" r="13" fill="#9d6cff"/>
+<text x="988" y="515" font-size="10" fill="#fff">.NET</text>
+
+<animateTransform
+attributeName="transform"
+type="rotate"
+from="0 1005 315"
+to="360 1005 315"
+dur="22s"
+repeatCount="indefinite"/>
+
+</g>
+
+<g>
+
+<circle cx="820" cy="315" r="13" fill="#66dfff"/>
+<text x="798" y="320" font-size="9" fill="#fff">NG</text>
+
+<animateTransform
+attributeName="transform"
+type="rotate"
+from="0 1005 315"
+to="360 1005 315"
+dur="22s"
+repeatCount="indefinite"/>
+
+</g>
+
+<!-- ================================= -->
+<!-- HUD -->
+<!-- ================================= -->
+
+<g>
+
+<text
+
+x="825"
+
+y="655"
+
+font-size="16"
+
+fill="#8fdfff">
+
+STATUS
+
+</text>
+
+<rect
+x="895"
+y="644"
+width="220"
+height="8"
+rx="4"
+fill="#1d2845"/>
+
+<rect
+x="895"
+y="644"
+width="0"
+height="8"
+rx="4"
+fill="#61d8ff">
+
+<animate
+attributeName="width"
+values="0;210"
+dur="2.5s"
+fill="freeze"/>
+
+</rect>
+
+<text
+
+x="1125"
+
+y="655"
+
+font-size="14"
+
+fill="#ffffff">
+
+ONLINE
+
+</text>
+
+</g>
     
     
 </g>
