@@ -939,7 +939,7 @@ repeatCount="indefinite"/>
     width="430"
     height="645"
     preserveAspectRatio="xMidYMid meet"
-    opacity="0">
+    opacity="1">
 
     <animate
         attributeName="opacity"
