@@ -354,6 +354,504 @@ L0 740Z
 
 </rect>
 
+    <!-- ========================= -->
+<!-- TERMINAL WINDOW -->
+<!-- ========================= -->
+
+<defs>
+
+<linearGradient id="terminalBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#ff63d9"/>
+<stop offset="100%" stop-color="#7d6dff"/>
+</linearGradient>
+
+<linearGradient id="glass">
+<stop offset="0%" stop-color="#ffffff" stop-opacity=".08"/>
+<stop offset="100%" stop-color="#ffffff" stop-opacity=".02"/>
+</linearGradient>
+
+<linearGradient id="editorGlass">
+<stop offset="0%" stop-color="#0b1024"/>
+<stop offset="100%" stop-color="#11172d"/>
+</linearGradient>
+
+</defs>
+
+<!-- TERMINAL -->
+
+<g id="terminal">
+
+<rect
+x="78"
+y="82"
+width="640"
+height="56"
+rx="16"
+fill="url(#glass)"
+stroke="url(#terminalBorder)"
+stroke-opacity=".55"/>
+
+<circle cx="103" cy="110" r="6" fill="#ff5f57"/>
+<circle cx="123" cy="110" r="6" fill="#febc2e"/>
+<circle cx="143" cy="110" r="6" fill="#28c840"/>
+
+<text
+x="170"
+y="116"
+font-size="20"
+fill="#bde6ff"
+font-family="Consolas,monospace">
+
+user@dev:~$ cat README.md
+
+<animate
+attributeName="opacity"
+values="0;1"
+dur="2.6s"
+fill="freeze"/>
+
+</text>
+
+<rect
+x="470"
+y="95"
+width="10"
+height="22"
+fill="#ffffff">
+
+<animate
+attributeName="opacity"
+values="1;0;1"
+dur=".8s"
+repeatCount="indefinite"/>
+
+</rect>
+
+</g>
+
+<!-- ========================= -->
+<!-- NAME -->
+<!-- ========================= -->
+
+<g id="name">
+
+<text
+
+x="90"
+
+y="205"
+
+font-size="58"
+
+font-weight="700"
+
+fill="url(#terminalBorder)"
+
+letter-spacing="2">
+
+DHIRENDRA
+
+<animate
+attributeName="opacity"
+values="0;1"
+dur="1s"
+fill="freeze"/>
+
+</text>
+
+<text
+
+x="92"
+
+y="270"
+
+font-size="58"
+
+font-weight="700"
+
+fill="#ffffff"
+
+letter-spacing="2">
+
+YADAV
+
+<animate
+attributeName="opacity"
+values="0;1"
+begin=".5s"
+dur="1s"
+fill="freeze"/>
+
+</text>
+
+</g>
+
+<!-- ========================= -->
+<!-- ROLE -->
+<!-- ========================= -->
+
+<g id="roles">
+
+<text
+x="94"
+y="318"
+font-size="26"
+fill="#66ddff">
+
+<tspan>
+
+.NET Developer
+
+<set
+attributeName="display"
+to="inline"
+begin="0s"/>
+
+<set
+attributeName="display"
+to="none"
+begin="2s"/>
+
+</tspan>
+
+<tspan display="none">
+
+Angular Developer
+
+<set
+attributeName="display"
+to="inline"
+begin="2s"/>
+
+<set
+attributeName="display"
+to="none"
+begin="4s"/>
+
+</tspan>
+
+<tspan display="none">
+
+Backend Engineer
+
+<set
+attributeName="display"
+to="inline"
+begin="4s"/>
+
+<set
+attributeName="display"
+to="none"
+begin="6s"/>
+
+</tspan>
+
+<tspan display="none">
+
+Full Stack Developer
+
+<set
+attributeName="display"
+to="inline"
+begin="6s"/>
+
+<set
+attributeName="display"
+to="none"
+begin="8s"/>
+
+</tspan>
+
+<tspan display="none">
+
+Problem Solver
+
+<set
+attributeName="display"
+to="inline"
+begin="8s"/>
+
+<set
+attributeName="display"
+to="none"
+begin="10s"/>
+
+</tspan>
+
+<animate
+attributeName="opacity"
+values="1;1"
+dur="10s"
+repeatCount="indefinite"/>
+
+</text>
+
+</g>
+
+<!-- ========================= -->
+<!-- QUOTE -->
+<!-- ========================= -->
+
+<g>
+
+<rect
+
+x="86"
+
+y="345"
+
+width="470"
+
+height="76"
+
+rx="16"
+
+fill="#121931"
+
+stroke="#6d6cff"
+
+stroke-opacity=".35"/>
+
+<text
+
+x="108"
+
+y="388"
+
+font-size="23"
+
+fill="#ffd4fb">
+
+Every bug teaches a better solution.
+
+</text>
+
+</g>
+
+<!-- ========================= -->
+<!-- ABOUT -->
+<!-- ========================= -->
+
+<g>
+
+<text
+x="90"
+y="470"
+font-size="27"
+fill="#ffffff">
+
+About Me
+
+</text>
+
+<text
+x="95"
+y="515"
+font-size="20"
+fill="#7edfff">
+
+✓ Building Speaklio
+
+</text>
+
+<text
+x="95"
+y="548"
+font-size="20"
+fill="#7edfff">
+
+✓ Building GetReferred
+
+</text>
+
+<text
+x="95"
+y="581"
+font-size="20"
+fill="#7edfff">
+
+✓ Enterprise Applications
+
+</text>
+
+<text
+x="95"
+y="614"
+font-size="20"
+fill="#7edfff">
+
+✓ Clean Architecture
+
+</text>
+
+</g>
+
+<!-- ========================= -->
+<!-- TECH PILLS -->
+<!-- ========================= -->
+
+<g id="skills">
+
+<g transform="translate(86 640)">
+<rect rx="16" width="74" height="32" fill="#1c2448"/>
+<text x="18" y="21" font-size="14" fill="#fff">C#</text>
+</g>
+
+<g transform="translate(170 640)">
+<rect rx="16" width="84" height="32" fill="#1c2448"/>
+<text x="15" y="21" font-size="14" fill="#fff">.NET</text>
+</g>
+
+<g transform="translate(266 640)">
+<rect rx="16" width="110" height="32" fill="#1c2448"/>
+<text x="12" y="21" font-size="14" fill="#fff">Angular</text>
+</g>
+
+<g transform="translate(390 640)">
+<rect rx="16" width="122" height="32" fill="#1c2448"/>
+<text x="12" y="21" font-size="14" fill="#fff">SignalR</text>
+</g>
+
+<g transform="translate(525 640)">
+<rect rx="16" width="104" height="32" fill="#1c2448"/>
+<text x="12" y="21" font-size="14" fill="#fff">SQL</text>
+</g>
+
+</g>
+
+<!-- ========================= -->
+<!-- CODE EDITOR -->
+<!-- ========================= -->
+
+<g id="editor">
+
+<rect
+
+x="815"
+
+y="420"
+
+width="370"
+
+height="200"
+
+rx="18"
+
+fill="url(#editorGlass)"
+
+stroke="#6e64ff"
+
+stroke-opacity=".4"/>
+
+<circle cx="842" cy="444" r="5" fill="#ff5f57"/>
+<circle cx="860" cy="444" r="5" fill="#febc2e"/>
+<circle cx="878" cy="444" r="5" fill="#28c840"/>
+
+<text
+x="840"
+y="486"
+font-size="18"
+font-family="Consolas,monospace"
+fill="#79e5ff">
+
+const buildDreams = () => {
+
+</text>
+
+<text
+x="860"
+y="520"
+font-size="18"
+font-family="Consolas,monospace"
+fill="#ffffff">
+
+learn();
+
+</text>
+
+<text
+x="860"
+y="550"
+font-size="18"
+font-family="Consolas,monospace"
+fill="#ffffff">
+
+build();
+
+</text>
+
+<text
+x="860"
+y="580"
+font-size="18"
+font-family="Consolas,monospace"
+fill="#ffffff">
+
+repeat();
+
+</text>
+
+<text
+x="840"
+y="610"
+font-size="18"
+font-family="Consolas,monospace"
+fill="#79e5ff">
+
+}
+
+</text>
+
+</g>
+
+<!-- ========================= -->
+<!-- NEON -->
+<!-- ========================= -->
+
+<text
+
+x="830"
+
+y="390"
+
+font-size="28"
+
+font-weight="700"
+
+fill="#ff62d8"
+
+filter="url(#glow)">
+
+KEEP CODING
+
+<animate
+attributeName="opacity"
+values="0;1;.4;1;.8;1"
+dur="2s"
+fill="freeze"/>
+
+</text>
+
+<text
+
+x="830"
+
+y="425"
+
+font-size="28"
+
+font-weight="700"
+
+fill="#6be5ff"
+
+filter="url(#glow)">
+
+KEEP GROWING
+
+</text>
+
+    
+    
 </g>
 
 </svg>
