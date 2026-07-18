@@ -1,0 +1,359 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="740" viewBox="0 0 1280 740">
+
+<title>Dhirendra Yadav Banner</title>
+
+<style>
+
+svg{
+    font-family:
+    Inter,
+    Segoe UI,
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
+.bgFloat{
+    animation:bgFloat 18s ease-in-out infinite;
+    transform-origin:center;
+}
+
+@keyframes bgFloat{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-12px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+.star{
+
+animation:twinkle 4s infinite;
+
+}
+
+@keyframes twinkle{
+
+0%{
+opacity:.15;
+}
+
+50%{
+opacity:1;
+}
+
+100%{
+opacity:.15;
+}
+
+}
+
+.orb{
+
+animation:orb 8s ease-in-out infinite;
+
+}
+
+@keyframes orb{
+
+0%{
+transform:scale(.9);
+opacity:.4;
+}
+
+50%{
+transform:scale(1.15);
+opacity:.85;
+}
+
+100%{
+transform:scale(.9);
+opacity:.4;
+}
+
+}
+
+.shoot{
+
+animation:shoot 7s linear infinite;
+
+}
+
+@keyframes shoot{
+
+0%{
+
+transform:translate(-200px,-100px);
+
+opacity:0;
+
+}
+
+15%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translate(1400px,900px);
+
+opacity:0;
+
+}
+
+}
+
+.particle{
+
+animation:particle 10s linear infinite;
+
+}
+
+@keyframes particle{
+
+0%{
+
+transform:translateY(40px);
+
+opacity:0;
+
+}
+
+20%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-80px);
+
+opacity:0;
+
+}
+
+}
+
+.glow{
+
+filter:url(#glow);
+
+}
+
+</style>
+
+<defs>
+
+<clipPath id="clip">
+
+<rect x="10" y="10" rx="34" ry="34" width="1260" height="720"></rect>
+
+</clipPath>
+
+<filter id="glow">
+
+<feGaussianBlur stdDeviation="8" result="blur"></feGaussianBlur>
+
+<feMerge>
+
+<feMergeNode in="blur"></feMergeNode>
+
+<feMergeNode in="SourceGraphic"></feMergeNode>
+
+</feMerge>
+
+</filter>
+
+<filter id="softGlow">
+
+<feGaussianBlur stdDeviation="20"></feGaussianBlur>
+
+</filter>
+
+<linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+
+<stop offset="0%" stop-color="#070915"></stop>
+
+<stop offset="35%" stop-color="#130A27"></stop>
+
+<stop offset="70%" stop-color="#1D103A"></stop>
+
+<stop offset="100%" stop-color="#090A17"></stop>
+
+</linearGradient>
+
+<radialGradient id="pinkOrb">
+
+<stop offset="0%" stop-color="#ff5dc8" stop-opacity=".95"></stop>
+
+<stop offset="100%" stop-color="#ff5dc8" stop-opacity="0"></stop>
+
+</radialGradient>
+
+<radialGradient id="purpleOrb">
+
+<stop offset="0%" stop-color="#8d6bff" stop-opacity=".95"></stop>
+
+<stop offset="100%" stop-color="#8d6bff" stop-opacity="0"></stop>
+
+</radialGradient>
+
+<radialGradient id="blueOrb">
+
+<stop offset="0%" stop-color="#53d7ff" stop-opacity=".9"></stop>
+
+<stop offset="100%" stop-color="#53d7ff" stop-opacity="0"></stop>
+
+</radialGradient>
+
+<linearGradient id="aurora1">
+
+<stop offset="0%" stop-color="#ff4fd8" stop-opacity=".10"></stop>
+
+<stop offset="50%" stop-color="#9d59ff" stop-opacity=".35"></stop>
+
+<stop offset="100%" stop-color="#57d7ff" stop-opacity=".10"></stop>
+
+</linearGradient>
+
+</defs>
+
+<g clip-path="url(#clip)">
+
+<rect width="1280" height="740" fill="url(#bgGradient)"></rect>
+
+<!-- ambient glow -->
+
+<circle class="orb" cx="240" cy="160" r="220" fill="url(#pinkOrb)" filter="url(#softGlow)"></circle>
+
+<circle class="orb" cx="1020" cy="620" r="260" fill="url(#purpleOrb)" filter="url(#softGlow)"></circle>
+
+<circle class="orb" cx="910" cy="180" r="180" fill="url(#blueOrb)" filter="url(#softGlow)"></circle>
+
+<!-- aurora -->
+
+<path class="bgFloat" fill="url(#aurora1)" d="
+M0 220
+C160 150
+320 320
+510 180
+C720 20
+910 240
+1120 120
+C1220 70
+1280 90
+1280 0
+0 0Z
+"></path>
+
+<path class="bgFloat" opacity=".5" fill="url(#aurora1)" d="
+M0 500
+C260 420
+420 620
+640 480
+C860 360
+1100 560
+1280 420
+L1280 740
+L0 740Z
+"></path>
+
+<!-- stars -->
+
+<g>
+
+<circle class="star" cx="120" cy="80" r="2" fill="white"></circle>
+
+<circle class="star" cx="210" cy="140" r="1.5" fill="white"></circle>
+
+<circle class="star" cx="340" cy="70" r="2" fill="white"></circle>
+
+<circle class="star" cx="430" cy="180" r="1.4" fill="white"></circle>
+
+<circle class="star" cx="560" cy="90" r="2" fill="white"></circle>
+
+<circle class="star" cx="660" cy="150" r="1.8" fill="white"></circle>
+
+<circle class="star" cx="760" cy="60" r="2" fill="white"></circle>
+
+<circle class="star" cx="920" cy="120" r="1.6" fill="white"></circle>
+
+<circle class="star" cx="1060" cy="90" r="2" fill="white"></circle>
+
+<circle class="star" cx="1180" cy="150" r="2" fill="white"></circle>
+
+<circle class="star" cx="180" cy="330" r="2" fill="white"></circle>
+
+<circle class="star" cx="440" cy="290" r="1.7" fill="white"></circle>
+
+<circle class="star" cx="700" cy="250" r="2" fill="white"></circle>
+
+<circle class="star" cx="950" cy="300" r="2" fill="white"></circle>
+
+<circle class="star" cx="1180" cy="340" r="2" fill="white"></circle>
+
+</g>
+
+<!-- shooting star -->
+
+<g class="shoot">
+
+<line x1="0" y1="0" x2="160" y2="0" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></line>
+
+<circle cx="0" cy="0" r="4" fill="white"></circle>
+
+</g>
+
+<!-- floating particles -->
+
+<g opacity=".45">
+
+<circle class="particle" cx="130" cy="620" r="3" fill="#ff70dc"></circle>
+
+<circle class="particle" cx="260" cy="680" r="2" fill="#57d7ff"></circle>
+
+<circle class="particle" cx="420" cy="650" r="4" fill="#b487ff"></circle>
+
+<circle class="particle" cx="590" cy="610" r="2" fill="#ff70dc"></circle>
+
+<circle class="particle" cx="770" cy="690" r="3" fill="#57d7ff"></circle>
+
+<circle class="particle" cx="920" cy="660" r="2" fill="#b487ff"></circle>
+
+<circle class="particle" cx="1100" cy="640" r="3" fill="#ff70dc"></circle>
+
+</g>
+
+<!-- Main layout guides -->
+
+<rect x="50" y="55" rx="24" ry="24" width="700" height="610" fill="#0f1325" fill-opacity=".42" stroke="#8b66ff" stroke-opacity=".18"></rect>
+
+<rect x="790" y="60" rx="30" ry="30" width="430" height="600" fill="#101425" fill-opacity=".38" stroke="#7a5eff" stroke-opacity=".20"></rect>
+
+<!-- Placeholder for future avatar -->
+<circle cx="1005" cy="315" r="165" fill="none" stroke="#a46fff" stroke-width="3" stroke-dasharray="8 8" opacity=".35"></circle>
+
+<!-- Future scanner path -->
+<rect id="scanner" x="790" y="140" width="430" height="8" fill="#6fe8ff" opacity="0">
+
+<animate attributeName="y" values="140;500;140" dur="3.5s" repeatCount="indefinite"></animate>
+
+<animate attributeName="opacity" values="0;.9;0" dur="3.5s" repeatCount="indefinite"></animate>
+
+</rect>
+
+</g>
+
+</svg>
