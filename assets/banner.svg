@@ -966,22 +966,13 @@ repeatCount="indefinite"/>
 </circle>
 
 <image
-
-href="avatar.svg"
-
-x="835"
-
-y="95"
-
-width="340"
-
-height="470"
-
-clip-path="url(#avatarClip)"
-
-opacity="0"
-
-filter="url(#avatarGlow)">
+    x="835"
+    y="95"
+    width="340"
+    height="470"
+    href="./avatar.svg"
+    clip-path="url(#avatarClip)"
+    preserveAspectRatio="xMidYMid meet"/>
 
 <animate
 attributeName="opacity"
