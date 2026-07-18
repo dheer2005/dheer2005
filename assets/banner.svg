@@ -343,7 +343,38 @@ L0 740Z
 <rect x="790" y="60" rx="30" ry="30" width="430" height="600" fill="#101425" fill-opacity=".38" stroke="#7a5eff" stroke-opacity=".20"></rect>
 
 <!-- Placeholder for future avatar -->
-<circle cx="1005" cy="315" r="165" fill="none" stroke="#a46fff" stroke-width="3" stroke-dasharray="8 8" opacity=".35"></circle>
+<!-- ========================= -->
+<!-- AVATAR MASK -->
+<!-- ========================= -->
+
+<defs>
+
+<clipPath id="avatarClip">
+
+<circle
+cx="1005"
+cy="315"
+r="170"/>
+
+</clipPath>
+
+<filter id="avatarGlow">
+
+<feGaussianBlur
+stdDeviation="10"
+result="blur"/>
+
+<feMerge>
+
+<feMergeNode in="blur"/>
+
+<feMergeNode in="SourceGraphic"/>
+
+</feMerge>
+
+</filter>
+
+</defs>
 
 <!-- Future scanner path -->
 <rect id="scanner" x="790" y="140" width="430" height="8" fill="#6fe8ff" opacity="0">
